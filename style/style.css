@@ -1,0 +1,73 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: 400;
+  min-width: 320px;
+}
+
+nav {
+  z-index: 101;
+  position: fixed;
+  top: 30vh;
+  right: 1rem;
+}
+
+.section-nav li.active > a {
+  color: #333;
+  font-weight: 500;
+  border-right: 1px solid #333;
+  padding-right: 0.5rem;
+  margin-right: -1rem;
+}
+
+.section-nav {
+  border-right: 1px solid #efefef;
+}
+
+@media (max-width: 900px) {
+  .section-nav {
+    display: none;
+  }
+}
+
+.section-nav ol {
+  list-style: none;
+  float: right;
+}
+
+.section-nav a {
+  text-decoration: none;
+  padding: .125rem 0;
+  display: block;
+  float: right;
+  color: #ccc;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.section-nav a:hover, .section-nav a:focus {
+  color: white;
+  text-decoration: none;
+  margin: 5px 0px 10px 0px;
+}
+
+.section-nav li {
+  margin-right: 1rem;
+}
+
+.section-nav li:active a {
+  color: white;
+  font-weight: 500;
+}
+
+.section-nav::after {
+  color: #161513;
+  mix-blend-mode: difference;
+}
+/*# sourceMappingURL=style.css.map */

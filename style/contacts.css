@@ -1,0 +1,53 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: 400;
+  min-width: 320px;
+}
+
+footer {
+  background-color: #161513;
+  height: auto;
+  color: #929292;
+  padding-top: 20px;
+}
+
+footer a {
+  color: #929292;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+footer p {
+  font-size: small;
+  margin-top: 10px;
+}
+
+.contacts i {
+  margin-right: 10px;
+}
+
+.contacts a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 5px;
+}
+
+.socket {
+  text-align: center;
+  color: #585858;
+}
+/*# sourceMappingURL=contacts.css.map */

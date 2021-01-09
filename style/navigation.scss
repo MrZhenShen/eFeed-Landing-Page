@@ -1,0 +1,51 @@
+@import "./cfg";
+
+nav{
+    z-index: 101;
+    position: fixed;
+    top: 30vh;
+    right: 1rem;
+}
+.section-nav li.active > a {
+	color: #333;
+    font-weight: 500;
+    border-right: 1px solid #333;
+    padding-right: 0.5rem;
+    margin-right: -1rem;
+}
+.section-nav {
+    border-right: 1px solid #efefef;
+    @media (max-width: 900px){
+        display: none;
+    }
+    ol{
+        list-style: none;
+        float: right;
+    }
+    a{
+        text-decoration: none;
+        padding: .125rem 0;
+        display: block;
+        float: right;
+        color: #ccc;
+        transition: all .25s ease;
+        &:hover, &:focus{
+            color: white;
+            text-decoration: none;
+            margin: 5px 0px 10px 0px;
+        } 
+    }
+    li{
+        margin-right: 1rem;
+    }
+    li:active{
+        a{
+            color: white;
+            font-weight: 500;
+        }
+    }
+    &::after{
+        color: $paw;
+        mix-blend-mode: difference;
+    }
+}

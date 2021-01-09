@@ -1,0 +1,87 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: 400;
+  min-width: 320px;
+}
+
+#features {
+  overflow: hidden;
+  height: 102vh;
+  -webkit-box-shadow: inset 21px 66px 19px -58px black;
+          box-shadow: inset 21px 66px 19px -58px black;
+}
+
+#features .featuresHearderText {
+  z-index: 2;
+  margin: 50px 0px;
+  text-align: center;
+}
+
+#features .featureList {
+  z-index: 1;
+  margin: 0px 20px;
+}
+
+#features .featureList div {
+  border-left: 5px dotted #50D850;
+  border-radius: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#features .featureList div:nth-child(even) {
+  margin-left: 30vw;
+}
+
+@media (max-width: 700px) {
+  #features .featureList div:nth-child(even) {
+    margin-left: 0vw;
+  }
+}
+
+#features .featureList div:nth-child(odd) {
+  border-left: 0px;
+  border-right: 5px dotted #50D850;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  text-align: right;
+}
+
+#features .featureList img {
+  padding: 10px;
+  margin: 10px 10px 10px 30px;
+}
+
+#features .featureList span {
+  font-weight: 600;
+  font-size: large;
+}
+
+#features .deviceFeature {
+  position: absolute;
+  z-index: 0;
+  right: 0px;
+}
+
+@media (max-width: 900px) {
+  #features .deviceFeature {
+    display: none;
+  }
+}
+/*# sourceMappingURL=features.css.map */

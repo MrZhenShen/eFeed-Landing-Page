@@ -1,0 +1,55 @@
+@import "./cfg";
+
+.carousel-inner, .carousel{
+    background: $bg;
+    height: auto;
+    display: block;
+    // position: relative;
+    max-height: $pageSize;
+}
+.carousel-item{
+    img{
+        display: block;
+        max-height: $pageSize;
+        height: auto;
+        margin: 0 auto;
+        @media (max-width: 1000px) {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+.carousel-indicators{
+    position: absolute;
+    margin-bottom: 30px;
+}
+.carousel-control-prev{
+    position: absolute;
+    margin-left: 7vw;
+}
+.carousel-control-next{
+    position: absolute;
+    margin-right: 7vw;
+}
+.carousel-caption{
+    position: absolute;
+    margin: 10px;
+    a{
+        color: white;
+        &:hover{
+            color: white;
+            text-decoration: none;
+        }
+        span{
+            display: inline-block;
+            background-color: #00c2ff;
+            margin: 10px 0;
+            padding: 5px 25px;
+            border-radius: 20px;
+            transition: all .25s ease;
+            &:focus, &:hover{
+                background-color: darken(#00c2ff, 20);
+            }
+        }
+    }
+}

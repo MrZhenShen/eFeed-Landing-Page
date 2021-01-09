@@ -1,0 +1,77 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: 400;
+  min-width: 320px;
+}
+
+.carousel-inner, .carousel {
+  background: #242322;
+  height: auto;
+  display: block;
+  max-height: 102vh;
+}
+
+.carousel-item img {
+  display: block;
+  max-height: 102vh;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.carousel-indicators {
+  position: absolute;
+  margin-bottom: 30px;
+}
+
+.carousel-control-prev {
+  position: absolute;
+  margin-left: 7vw;
+}
+
+.carousel-control-next {
+  position: absolute;
+  margin-right: 7vw;
+}
+
+.carousel-caption {
+  position: absolute;
+  margin: 10px;
+}
+
+.carousel-caption a {
+  color: white;
+}
+
+.carousel-caption a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.carousel-caption a span {
+  display: inline-block;
+  background-color: #00c2ff;
+  margin: 10px 0;
+  padding: 5px 25px;
+  border-radius: 20px;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+.carousel-caption a span:focus, .carousel-caption a span:hover {
+  background-color: #007499;
+}
+/*# sourceMappingURL=sosNets.css.map */

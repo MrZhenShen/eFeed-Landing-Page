@@ -1,0 +1,135 @@
+@import "./cfg";
+
+.topLine{
+    position: absolute;
+    width: 100%;
+    padding: 80px 0;
+    margin-bottom: 20px;
+    // z-index: 100;
+    .container-fluid{
+        max-width: 1680px;
+    }
+}
+.logo{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    font-weight: 800;
+    margin-left: 40px;
+    span{
+        font-weight: 300;
+        transition: color 1s ease;
+    }
+    &:hover{
+        text-decoration: none;
+        color: white;
+        span{
+            // color: $orange;
+            color: #50D850;
+        }
+    }
+}
+
+.landing{
+    background-color: $bg;
+    color: white;
+    min-height: 700px;
+    height: $pageSize;
+    @media (max-width: 780px) {
+        height: auto;
+    }
+    @media(width: 768px){
+        @media(height: 1024px){
+            height: 60vh;
+        }
+    }
+    .content{
+        height: 100%;
+        padding: 160px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1{
+            line-height: 43px;
+            font-size: 32px;
+            margin-bottom: 28px;
+        }
+        h1, p, a, h4{
+            padding-left: 20px;
+        }
+        span{
+            font-weight: 300;
+        }
+        h4{
+            padding-top: 50px;
+            padding-bottom: 10px;
+        }
+        .row{
+            align-items: center;
+        }
+        .button{
+            background-color: #50D850;
+            color: white;
+            display: inline-block;
+            padding: 8px 25px;
+            margin-left: 20px;
+            border-radius: 10em;
+            font-size: 16px;
+            font-weight: 400;
+            transition: background-color .25s ease;
+            &:hover{
+                color: white;
+                text-decoration: none;
+                background-color: darken(#50D850, 20);
+                // background-color: $paw;
+            }
+        }
+    }
+}
+
+.bg{
+    min-height: 700px;
+    height: $pageSize;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    &::before{
+
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        opacity: 0.1;
+        background-image: url("img/pawsLanding.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &::after{
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        opacity: 0.009;
+        background-image: url("img/ukraine.png");
+        background-position: center;
+        background-repeat: no-repeat;
+
+        transform: scale(1);
+        @media (max-width: 1200px) {
+            transform: scale(0.7);
+        }
+        @media (max-width: 1000px) {
+            display: none;
+        }
+    }
+}

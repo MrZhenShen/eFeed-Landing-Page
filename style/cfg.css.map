@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAMA,AAAA,CAAC,CAAA;EACG,WAAW,EAAE,wBAAwB;CACxC;;AACD,AAAA,IAAI,CAAA;EACH,eAAe,EAAE,MAAM;CACvB;;AAED,AAAA,IAAI,CAAA;EACA,WAAW,EAAE,GAAG;EAChB,SAAS,EAAE,KAAK;CACnB",
+    "sources": [
+        "cfg.scss"
+    ],
+    "names": [],
+    "file": "cfg.css"
+}

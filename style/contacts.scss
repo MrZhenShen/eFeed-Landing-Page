@@ -1,0 +1,34 @@
+@import "./cfg";
+
+footer{
+    background-color: $paw;
+    height: auto;
+    color: rgb(146, 146, 146);
+    padding-top: 20px;
+    a{
+        color: rgb(146, 146, 146);
+        &:hover{
+            color: white;
+            text-decoration: none;
+        }
+    }
+    p{
+        font-size: small;
+        margin-top: 10px;
+    }
+}
+.contacts{
+    i{
+        margin-right: 10px;
+    }
+    a{
+        display: flex;
+        align-items: center;
+        margin-right: 5px;
+    }
+}
+.socket{
+    text-align: center;
+    color: rgb(88, 88, 88);
+
+}

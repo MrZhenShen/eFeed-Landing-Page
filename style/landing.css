@@ -1,0 +1,179 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: 400;
+  min-width: 320px;
+}
+
+.topLine {
+  position: absolute;
+  width: 100%;
+  padding: 80px 0;
+  margin-bottom: 20px;
+}
+
+.topLine .container-fluid {
+  max-width: 1680px;
+}
+
+.logo {
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  font-weight: 800;
+  margin-left: 40px;
+}
+
+.logo span {
+  font-weight: 300;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
+.logo:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.logo:hover span {
+  color: #50D850;
+}
+
+.landing {
+  background-color: #242322;
+  color: white;
+  min-height: 700px;
+  height: 102vh;
+}
+
+@media (max-width: 780px) {
+  .landing {
+    height: auto;
+  }
+}
+
+@media (width: 768px) and (height: 1024px) {
+  .landing {
+    height: 60vh;
+  }
+}
+
+.landing .content {
+  height: 100%;
+  padding: 160px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing .content h1 {
+  line-height: 43px;
+  font-size: 32px;
+  margin-bottom: 28px;
+}
+
+.landing .content h1, .landing .content p, .landing .content a, .landing .content h4 {
+  padding-left: 20px;
+}
+
+.landing .content span {
+  font-weight: 300;
+}
+
+.landing .content h4 {
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.landing .content .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.landing .content .button {
+  background-color: #50D850;
+  color: white;
+  display: inline-block;
+  padding: 8px 25px;
+  margin-left: 20px;
+  border-radius: 10em;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-transition: background-color .25s ease;
+  transition: background-color .25s ease;
+}
+
+.landing .content .button:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #239f23;
+}
+
+.bg {
+  min-height: 700px;
+  height: 102vh;
+  width: 100%;
+  z-index: 0;
+  position: absolute;
+}
+
+.bg::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  opacity: 0.1;
+  background-image: url("img/pawsLanding.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0.009;
+  background-image: url("img/ukraine.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+@media (max-width: 1200px) {
+  .bg::after {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
+@media (max-width: 1000px) {
+  .bg::after {
+    display: none;
+  }
+}
+/*# sourceMappingURL=landing.css.map */

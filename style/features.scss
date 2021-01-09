@@ -1,0 +1,59 @@
+@import "./cfg";
+// *{margin: 0 auto;}
+
+#features{
+    overflow: hidden;
+    height: $pageSize;
+    box-shadow: inset 21px 66px 19px -58px rgba(0,0,0,1);
+    .featuresHearderText{
+        z-index: 2;
+        margin: 50px 0px;
+        text-align: center;
+    } 
+    .featureList{
+        z-index: 1;
+        margin: 0px 20px;
+        div{
+            border-left: 5px dotted #50D850;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            // border: 1px solid black;
+        }
+        div:nth-child(even){
+            margin-left: 30vw;
+        }
+        @media (max-width: 700px) {
+            div:nth-child(even){
+                margin-left: 0vw;
+            }
+        }
+        div:nth-child(odd){
+            border-left: 0px;
+            border-right: 5px dotted #50D850;
+            justify-content: right;
+            flex-direction: row-reverse;
+            text-align: right;
+        }
+        img{
+            padding: 10px;
+            margin: 10px 10px 10px 30px;
+        } 
+        span{
+            font-weight: 600;
+            font-size: large;
+        }
+    }
+    .deviceFeature{
+        position: absolute;
+        z-index: 0;
+        right: 0px;
+    }
+    @media (max-width: 900px) {
+        .deviceFeature{
+            display: none;
+        }
+    }
+    
+    
+}

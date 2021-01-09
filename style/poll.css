@@ -1,0 +1,22 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: 400;
+  min-width: 320px;
+}
+
+.poll {
+  height: 102vh;
+  background-color: #242322;
+  background-image: url("img/bgPoll.png");
+  background-position: center;
+  -webkit-box-shadow: inset 0px 0px 22px 23px #242322;
+          box-shadow: inset 0px 0px 22px 23px #242322;
+}
+/*# sourceMappingURL=poll.css.map */

@@ -1,0 +1,10 @@
+@import "./cfg";
+
+.poll{
+    height: $pageSize;
+    background-color: $bg;
+    background-image: url("img/bgPoll.png");
+    background-position: center;
+    // background-repeat: no-repeat;
+    box-shadow: inset 0px 0px 22px 23px rgba(36,35,34,1);
+}

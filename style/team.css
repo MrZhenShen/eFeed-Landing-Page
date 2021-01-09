@@ -1,0 +1,90 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-weight: 400;
+  min-width: 320px;
+}
+
+.team {
+  height: auto;
+  min-height: 102vh;
+}
+
+.team .hearderText {
+  margin: 50px auto 0;
+  text-align: center;
+}
+
+.team .member {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 25px 0;
+}
+
+@media (max-width: 600px) {
+  .team .member {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 25px 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .team .member h3 {
+    margin: 30px 50px 0px;
+    text-align: center;
+  }
+}
+
+.team img {
+  height: 250px;
+  border-radius: 100%;
+  -webkit-box-shadow: 11px 16px 24px -16px rgba(0, 0, 0, 0.75);
+          box-shadow: 11px 16px 24px -16px rgba(0, 0, 0, 0.75);
+  margin: 0 30px;
+}
+
+.team p {
+  font-size: medium;
+  font-weight: 300;
+  line-height: 1.1;
+}
+
+.team h3 {
+  margin: 20px 10px;
+}
+
+.team::before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: 1;
+  opacity: 0.02;
+  background-image: url("img/paws.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+/*# sourceMappingURL=team.css.map */
